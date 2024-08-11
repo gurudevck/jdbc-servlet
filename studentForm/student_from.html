@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="student.js"></script>
+</head>
+<body>
+    <h1>Student Details Form</h1>
+    <form action="" method="post" onsubmit="validateStudent(event)" id="">
+        <label for="studentId">Student ID:</label>
+        <input type="number" id="studentId" name="studentId"><br><br>
+        <div id="iderror" style="color: red"></div>
+        
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" name="studentName" ><br><br>
+        <div id="nameerror" style="color: red"></div>
+        
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+        </select><br><br>
+        
+        <!-- <input type="submit" value="Add Student"> -->
+        <!-- <button onclick="validateStudent(event)">Submit</button> -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
